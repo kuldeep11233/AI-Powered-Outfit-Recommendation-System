@@ -1,11 +1,11 @@
-📌 Project Overview
+Project Overview
 
 This project is a rule-based fashion recommendation engine designed for Culture Circle.
 It recommends complementary products based on brand positioning, color harmony, category compatibility, and occasion alignment, following luxury fashion styling principles.
 
 The goal is not brute-force similarity, but curated, stylistically sensible pairings — closer to how a human stylist thinks.
 
-🏗️ Architecture Overview
+Architecture Overview
 assessment/
 │
 ├── main.py              # FastAPI app entry point
@@ -16,8 +16,7 @@ assessment/
 ├── requirements.txt     # Dependencies
 └── README.md            # Project documentation
 
-
-📦 Data Processing & Normalization
+Data Processing & Normalization
 **Source**
 - Product data provided as CSV (exported product catalog)
 **Key Challenges Solved**
@@ -42,7 +41,7 @@ This fix ensures:
 - Skirts → bottom
 - Sneakers → footwear
 
-🎯 **Recommendation Logic (Core Intelligence)**
+**Recommendation Logic (Core Intelligence)**
 1. Brand Synergy
 
 Luxury brands pair best with:
@@ -79,8 +78,8 @@ Prevents:
 
 A product’s use-case matters.
 Example:
-- Luxury silk skirt ❌ Gym trainers
-- Luxury silk skirt ✅ Leather loafers / minimalist sneakers
+- Luxury silk skirt * Gym trainers
+- Luxury silk skirt - Leather loafers / minimalist sneakers
 
 Scoring System
 Each candidate product receives a cumulative score:
