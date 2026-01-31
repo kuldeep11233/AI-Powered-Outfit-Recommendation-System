@@ -1,0 +1,40 @@
+Project Setup
+1️. Clone the Repository
+git clone <your-repo-url>
+cd culture-circle-outfit-recommender
+
+Install Dependencies
+Make sure Python 3.9+ is installed.
+pip install fastapi uvicorn
+
+Project Structure
+.
+├── main.py          # FastAPI entry point
+├── data.py          # Product loading & normalization
+├── rules.py         # Brand, color & occasion rules
+├── scoring.py       # Scoring engine
+├── products.json    # Product dataset (normalized)
+└── README.md
+
+Running the Application
+Start the API server using Uvicorn:
+- uvicorn main:app --reload
+
+If the server starts correctly, you’ll see:
+- Loaded XXX products
+- Uvicorn running on http://127.0.0.1:8000 / uvicorn main:app --port 8001
+
+Now crtl + Click om Url then write URL/docs 
+Example: http://127.0.0.1:8000/docs
+
+Nvigate to /products
+Click on Try it Out
+Here you can see all listings.
+
+Navigate to /recommend/{product_id}
+Click on Try it Out
+Enter product_id 
+Hit Execute button
+
+Now in details you will se all recommendations with name, brand, etc.
+At last you can See "match_score"
